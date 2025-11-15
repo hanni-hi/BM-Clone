@@ -1,10 +1,12 @@
-import { MainContents, MainFooter, MainHeader } from "."
+import { MainContents1, MainFooter, MainHeader, MainHeaderBanner, MainTopFixedBar } from "."
 
 export const MainLayout = () => {
     return(
         <div className="main-layout">
+            <MainTopFixedBar/>
             <MainHeader />
-            <MainContents />
+            <MainHeaderBanner />
+            <MainContents1 />
             <MainFooter />
         </div>
 

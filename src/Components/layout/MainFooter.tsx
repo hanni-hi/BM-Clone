@@ -10,14 +10,15 @@ export const MainFooter=()=>
 
 return(
 <div className="main-footer">
+
 {buttonData.map((data, index)=>
 <FooterButton
 key={index}
 data={data}
 active={index===activeButton}
 clickButton={()=> setActiveButton(index) }
-
 />)}
+
 </div>
 )
 }
@@ -31,17 +32,19 @@ buttonImg:'https://cdn-icons-png.flaticon.com/512/25/25694.png'
   },
 
   {
-buttonText: '장보기,쇼핑'
-
+buttonText: '장보기,쇼핑',
+buttonImg:'https://cdn-icons-png.flaticon.com/512/126/126515.png'
   },
   {
-buttonText: '찜'
+buttonText: '찜',
+buttonImg:'https://cdn-icons-png.flaticon.com/512/25/25424.png'
   },
   {
-buttonText: '주문내역'
+buttonText: '주문내역',
+buttonImg:'https://cdn-icons-png.flaticon.com/512/876/876193.png'
   },
     {
-buttonText: '마이배민'
-  }
-
+buttonText: '마이배민',
+buttonImg:'https://cdn.iconscout.com/icon/premium/png-256-thumb/-emoji-icon-svg-download-png-2729877.png?f=webp&w=256'
+    }
 ]
